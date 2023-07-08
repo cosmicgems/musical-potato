@@ -34,7 +34,7 @@ const MarketingBox = () => {
                                         REMOVE NEGATIVE INQUIRIES
                                     </Typography>
                                     <Typography variant='p' component='div' sx={{width: '100%', paddingInlineStart: '6vw'}}>
-                                    We'll meticulously analyze your credit report, identify inaccuracies, and launch strategic disputes to remove those damaging negative marks, giving your creditworthiness a significant boost.
+                                    We&apos;ll meticulously analyze your credit report, identify inaccuracies, and launch strategic disputes to remove those damaging negative marks, giving your creditworthiness a significant boost.
                                     </Typography>
                           
                             </li>

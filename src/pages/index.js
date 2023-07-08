@@ -7,6 +7,7 @@ import Banner from '@/components/Banner'
 import MarketingBox from '@/components/MarketingBox'
 import { grey } from '@mui/material/colors'
 import SecuredCreditLine from '@/components/SecuredCreditLine'
+import CTA from '@/components/CTA'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function Home() {
           <Banner/>
           <MarketingBox/>
           <SecuredCreditLine/>
+          <CTA/>
         </Box>
 
       </Box>      

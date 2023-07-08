@@ -26,7 +26,7 @@ const SecuredCreditLine = () => {
                 Is a poor credit score hindering your financial progress? At <span className='company-name'>Credit Gurus</span>, we understand the importance of having a solid credit profile. Our secured credit line assistance offers you the opportunity to rebuild your credit and showcase responsible financial behavior. 
                 </Typography>
                 <Typography variant='p' component='div' sx={{width: '100%', textAlign: 'center'}}>
-                Here's how we help: 
+                Here&apos;s how we help: 
                 </Typography>
             </Grid>
 
@@ -41,7 +41,7 @@ const SecuredCreditLine = () => {
                                         EXPERT GUIDANCE
                                     </Typography>
                                     <Typography variant='p' component='div' sx={{width: '100%', paddingInlineStart: '6vw'}}>
-                                    Our experienced team will provide personalized guidance on establishing and managing secured credit lines effectively. We'll equip you with the knowledge and tools to make informed credit decisions.
+                                    Our experienced team will provide personalized guidance on establishing and managing secured credit lines effectively. We&apos;ll equip you with the knowledge and tools to make informed credit decisions.
                                     </Typography>
                           
                             </li>
@@ -51,7 +51,7 @@ const SecuredCreditLine = () => {
                                         TAILORED FINANCIAL EVALUATION
                                     </Typography>
                                     <Typography variant='p' component='div' sx={{width: '100%', paddingInlineStart: '6vw'}}>
-                                    We'll evaluate your unique financial situation and recommend the ideal secured credit line amount that aligns with your income, expenses, and existing debt obligations.
+                                    We&apos;ll evaluate your unique financial situation and recommend the ideal secured credit line amount that aligns with your income, expenses, and existing debt obligations.
                                     </Typography>
                           
                             </li>
@@ -61,7 +61,7 @@ const SecuredCreditLine = () => {
                                         LENDER NETWORK
                                     </Typography>
                                     <Typography variant='p' component='div' sx={{width: '100%', paddingInlineStart: '6vw'}}>
-                                    Leverage our extensive network of trusted lenders and financial institutions to access secured credit line options that suit your needs. We'll connect you with the right partners who understand your journey to credit recovery.
+                                    Leverage our extensive network of trusted lenders and financial institutions to access secured credit line options that suit your needs. We&apos;ll connect you with the right partners who understand your journey to credit recovery.
                                     </Typography>
                           
                             </li>
@@ -81,7 +81,7 @@ const SecuredCreditLine = () => {
                                         CREDIT MONITORING
                                     </Typography>
                                     <Typography variant='p' component='div' sx={{width: '100%', paddingInlineStart: '6vw'}}>
-                                    Stay on track with our credit monitoring services, allowing you to track your progress as your secured credit line positively impacts your credit report. We'll be there to provide ongoing support and guidance on maintaining positive credit habits.
+                                    Stay on track with our credit monitoring services, allowing you to track your progress as your secured credit line positively impacts your credit report. We&apos;ll be there to provide ongoing support and guidance on maintaining positive credit habits.
                                     </Typography>
                           
                             </li>
