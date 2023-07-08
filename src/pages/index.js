@@ -19,7 +19,7 @@ export default function Home() {
           <Headline/>
         </Box>
         <Box>
-          <Banner/>
+          {/* <Banner/> */}
           <MarketingBox/>
           <SecuredCreditLine/>
           <CTA/>
