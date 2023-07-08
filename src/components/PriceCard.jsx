@@ -6,7 +6,7 @@ import { grey, lightGreen } from '@mui/material/colors';
 const PriceCard = ({tier: {name, description, features, price, options, cta, button}}) => {
   return (
     <>
-        <Card sx={{height: '75vh', marginInline: '1.5vw', width: '85vw'}}>
+        <Card sx={{minHeight: '65vh', marginInline: '3vw', width: '85vw'}}>
             <CardContent sx={{}}>
                 <Typography sx={{width: '100%', textAlign: 'center', fontWeight: 'bold' }} variant='p' component='div'>
                     <span><RocketLaunchRoundedIcon sx={{color: lightGreen[500], fontSize: {xs: '2rem'}}}/></span>{name}
@@ -28,13 +28,14 @@ const PriceCard = ({tier: {name, description, features, price, options, cta, but
                 <Typography variant='h5' component='div' sx={{width: '100%', textAlign: 'center', fontWeight: 'bold', color: lightGreen[500], marginBlock: '2vh'}}>
                     {price}
                 </Typography>
-                <Typography sx={{width: '100%', textAlign: 'center', fontSize: '.65rem' }} variant='body' component='div'>
+                <Typography sx={{width: '100%', textAlign: 'center', fontSize: '.65rem' , marginBlockEnd: '3vh'}} variant='body' component='div'>
                     {cta}
                 </Typography>
+
             <Box sx={{marginBottom: 'auto', bgcolor: lightGreen[500], borderRadius: '5px'}}>
                 
                 <Button type='button' variant='contained' fullWidth size='large' sx={{color: grey[50]}} >
-                    {button} Placeholder
+                    {button}
                 </Button>
             </Box>
             </CardContent>

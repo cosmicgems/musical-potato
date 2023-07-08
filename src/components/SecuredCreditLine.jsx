@@ -12,7 +12,7 @@ import InsertDriveFileRoundedIcon from '@mui/icons-material/InsertDriveFileRound
 
 const SecuredCreditLine = () => {
   return (
-    <Box sx={{paddingInline: '3vw', paddingBlockStart: '5vh', bgcolor: lightGreen[700]}}>
+    <Box className="green-gradient-background" sx={{paddingInline: '3vw', paddingBlockStart: '5vh', bgcolor: "transparent"}}>
 
         <Grid container spacing={3} sx={{color: grey[50]}}>
             <Grid item xs={12} sx={{}}>

@@ -18,7 +18,7 @@ export default function Home() {
         <Box sx={{bgcolor: grey[50]}}>
           <Headline/>
         </Box>
-        <Box>
+        <Box sx={{paddingInline: 0}}>
           {/* <Banner/> */}
           <MarketingBox/>
           <SecuredCreditLine/>

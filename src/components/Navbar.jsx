@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import { lightGreen } from '@mui/material/colors';
+import { grey, lightGreen } from '@mui/material/colors';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -39,7 +39,7 @@ function Navbar() {
   return (
     <div style={{paddingInline: '33%'}}>
       <AppBar elevation={0} position="fixed" sx={{bgcolor: 'transparent', paddingInline: '6vw'}}>
-        <Container  maxWidth="xl" sx={{bgcolor: lightGreen[500], borderRadius: '10px'}}>
+        <Container  maxWidth="xl" sx={{bgcolor: grey[900], borderRadius: '10px'}}>
           <Toolbar disableGutters>
             <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
             <Typography
@@ -96,7 +96,7 @@ function Navbar() {
                 ))}
               </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, color: lightGreen["A400"] }} />
             <Typography
               variant="h5"
               noWrap

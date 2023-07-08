@@ -32,11 +32,11 @@ const Headline = () => {
             </Box>
         </CardContent>
 
-        <CardContent sx={{height: {xs:'85vh', }, padding: 0}} >
+        <CardContent sx={{height: {xs:'100vh', }, padding: 0}} >
             <CardMedia 
                 title='my pic'
                 id='Headliner Image of Woman'
-                sx={{ objectFit: 'cover',height:{xs: '85vh'}, padding: 0}}
+                sx={{ objectFit: 'cover',height:{xs: '100vh'}, padding: 0}}
                 image='https://images.pexels.com/photos/3891063/pexels-photo-3891063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             />
         </CardContent>
