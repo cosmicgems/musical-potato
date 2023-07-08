@@ -38,7 +38,7 @@ function Navbar() {
 
   return (
     <div style={{paddingInline: '33%'}}>
-      <AppBar elevation={0} position="fixed" sx={{bgcolor: 'transparent', paddingInline: '6vw'}}>
+      <AppBar elevation={0} position="fixed" sx={{bgcolor: 'transparent', paddingInline: '6vw', marginBlockStart: '3vh'}}>
         <Container  maxWidth="xl" sx={{bgcolor: grey[900], borderRadius: '10px'}}>
           <Toolbar disableGutters>
             <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
