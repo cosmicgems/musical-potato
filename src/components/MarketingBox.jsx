@@ -8,17 +8,17 @@ import AutoFixHighRoundedIcon from '@mui/icons-material/AutoFixHighRounded';
 
 const MarketingBox = () => {
   return (
-    <Box sx={{paddingInline: '3vw', paddingBlockEnd: '3vh'}}>
+    <Box sx={{paddingInline: '3vw', paddingBlockEnd: '3vh', marginBlockEnd: '5vh'}}>
 
         <Grid container spacing={3} sx={{}}>
             <Grid item xs={12} sx={{}}>
                 <Typography variant='h5' component='div' sx={{width: '100%', textAlign: 'center', marginBlockEnd: '3vh'}}>
                     Credit Repair Solutions
                 </Typography>
-                <Typography variant='p' component='div'>
+                <Typography variant='p' component='div' sx={{paddingInline: {xs: '6vw'}, marginBlockEnd: {xs:'1vh'}}}>
                 Are past credit mistakes holding you back? Our expert team at <span className='company-name'>Credit Gurus</span> is here to help you break free from the burden of negative inquiries and incorrect personal information on your credit report.
                 </Typography>
-                <Typography variant='p' component='div' sx={{width: '100%'}}>
+                <Typography variant='p' component='div' sx={{width: '100%', paddingInline: {xs:'8vw'}}}>
                     With our personalized credit solutions, we can:
                 </Typography>
             </Grid>
@@ -65,14 +65,17 @@ const MarketingBox = () => {
             </Grid>
 
             <Grid item xs={12} sx={{}}>
-                <Typography sx={{width:'100%', textAlign:'center', marginBlockEnd: '2vh'}} variant='p' component='div'>
-                Partner with us and witness the transformation as we pave the way to a brighter financial future. 
-                </Typography>
-                <Box fullWidth sx={{bgcolor: lightGreen[500], borderRadius:'5px'}}>
-                    <Button variant='filled' fullWidth size='lg' sx={{color: grey[50]}}>
-                        Start Credit Transformation
-                    </Button>
+                <Box sx={{paddingInline: {sm: '17vw'}}}>
+                    <Typography sx={{width:'100%', textAlign:'center', marginBlockEnd: '2vh'}} variant='p' component='div'>
+                        Partner with us and witness the transformation as we pave the way to a brighter financial future. 
+                    </Typography>
+                    <Box fullWidth sx={{bgcolor: lightGreen[500], borderRadius:'5px'}}>
+                        <Button variant='filled' fullWidth size='lg' sx={{color: grey[50]}}>
+                            Start Credit Transformation
+                        </Button>
+                    </Box>
                 </Box>
+
             </Grid>
         </Grid>
             

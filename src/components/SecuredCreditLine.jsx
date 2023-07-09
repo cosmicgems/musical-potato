@@ -19,10 +19,10 @@ const SecuredCreditLine = () => {
                 <Typography variant='h5' component='div' sx={{width: '100%', textAlign: 'center', marginBlockEnd: '2vh', color: grey[50], fontWeight: 'bold'}}>
                     Credit BOOSTER
                 </Typography>
-                <Typography className='mb-2' variant='p' component='div' sx={{ width: '100%', textAlign: 'center'}}>
+                <Typography className='mb-2' variant='p' component='div' sx={{ width: '100%', textAlign: 'center', paddingInline: '6vw'}}>
                 Build a Stronger Credit Foundation and Unlock New Possibilities!
                 </Typography>
-                <Typography variant='p' component='div' sx={{width: '100%', textAlign: 'center', marginBlockEnd: '3vh'}}>
+                <Typography variant='p' component='div' sx={{width: '100%', textAlign: 'justify', marginBlockEnd: '3vh', paddingInline: '3vw'}}>
                 Is a poor credit score hindering your financial progress? At <span className='company-name'>Credit Gurus</span>, we understand the importance of having a solid credit profile. Our secured credit line assistance offers you the opportunity to rebuild your credit and showcase responsible financial behavior. 
                 </Typography>
                 <Typography variant='p' component='div' sx={{width: '100%', textAlign: 'center'}}>
@@ -92,7 +92,8 @@ const SecuredCreditLine = () => {
             </Grid>
 
             <Grid item xs={12} sx={{}}>
-                <Typography sx={{width:'100%', textAlign:'center', marginBlockEnd: '2vh'}} variant='p' component='div'>
+            <Box sx={{paddingInline: '17.5vw'}}>
+                <Typography sx={{width:'100%', textAlign:'justify', marginBlockEnd: '2vh'}} variant='p' component='div'>
                     Unlock the door to a brighter financial future with our secured credit line assistance. Rebuild your credit, gain confidence, and open up new opportunities 
                 </Typography>
                 <Box fullWidth sx={{ borderRadius:'5px', bgcolor: grey[50], marginBlockEnd: '3vh' }}>
@@ -100,6 +101,8 @@ const SecuredCreditLine = () => {
                         BOOST MY CREDIT NOW!
                     </Button>
                 </Box>
+            </Box>
+                
             </Grid>
         </Grid>
             

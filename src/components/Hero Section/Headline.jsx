@@ -11,7 +11,7 @@ const Headline = () => {
         <CardContent sx={{bgcolor: grey[900], position: 'absolute', opacity: '50%', height: '100vh', width: '100%'}}>
 
         </CardContent>
-        <CardContent sx={{position: 'absolute'}}>
+        <CardContent sx={{position: 'absolute', width: '100%', paddingInline: {sm: '17.5%'}}}>
             <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', marginBlockStart: '45vh', color: grey[50], textShadow: '1px 1px #64DD17'}}>
                 Turn back the clock, SHAPE YOUR FUTURE!
             </Typography>

@@ -8,6 +8,7 @@ import MarketingBox from '@/components/MarketingBox'
 import { grey } from '@mui/material/colors'
 import SecuredCreditLine from '@/components/SecuredCreditLine'
 import CTA from '@/components/CTA'
+import Testimonials from '@/components/Testimonial Section/Testimonials'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,14 +16,15 @@ export default function Home() {
   return (
     <Layout>
       <Box sx={{minHeight: '100vh', width: '100%', bgcolor:grey[50]}}>
-        <Box sx={{bgcolor: grey[50]}}>
+        <Box sx={{bgcolor: grey[50], }}>
           <Headline/>
         </Box>
-        <Box sx={{paddingInline: 0}}>
+        <Box sx={{paddingInline: 0, marginBlockStart: {xs: '5vh', sm: '3vh'}}}>
           {/* <Banner/> */}
           <MarketingBox/>
           <SecuredCreditLine/>
           <CTA/>
+          <Testimonials />
         </Box>
 
       </Box>      
