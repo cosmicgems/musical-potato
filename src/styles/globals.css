@@ -27,11 +27,26 @@ body {
 }
 
 
+
 .maylike-products-wrapper h2{
   text-align: center;
   color: #324d67;
   overflow: hidden;
   font-size: 28px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  
+}
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 26s linear infinite;
+  overflow:  hidden;
+  flex-wrap: nowrap;
+
+  overflow-x: hidden;
+  /* width: 800%; */
 }
 .maylike-products-container{
   display: flex;
@@ -50,15 +65,10 @@ body {
   position: relative;
   width: 100%;
   overflow-x: hidden;
+  overflow:  hidden;
+  flex-wrap: nowrap;
 }
 
-.track {
-  /* position: absolute; */
-  white-space: nowrap;
-  will-change: transform;
-  animation: marquee 26s linear infinite;
-  width: 800%;
-}
 .track:hover {
   animation-play-state: paused;
 }

@@ -16,16 +16,32 @@ export default function Home() {
   return (
     <Layout>
       <Box sx={{minHeight: '100vh', width: '100%', bgcolor:grey[50]}}>
+      <div>
         <Box sx={{bgcolor: grey[50], }}>
           <Headline/>
         </Box>
+      </div>
+      <div>
         <Box sx={{paddingInline: 0, marginBlockStart: {xs: '5vh', sm: '3vh'}}}>
-          {/* <Banner/> */}
-          <MarketingBox/>
-          <SecuredCreditLine/>
-          <CTA/>
-          <Testimonials />
         </Box>
+      </div>
+      <div >
+        <Banner/>
+      </div>
+      <div>
+        <MarketingBox/>
+      </div>
+      <div>
+        <SecuredCreditLine/>
+      </div>
+      <div>
+        <CTA/>
+      </div>
+      <div>
+        <Testimonials />
+      </div>
+
+
 
       </Box>      
     </Layout>

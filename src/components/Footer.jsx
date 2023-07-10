@@ -21,8 +21,8 @@ const Footer = () => {
             <YouTube  sx={{fontSize: {xs:'2rem', sm: '3rem'}, color: red[900]}}/>
           </div>
         </Stack>
-       <Typography variant='overline' component='div' sx={{width: '100%', textAlign: 'center', fontWeight: 'bold', fontSize: {xs: '1rem'}, color: grey[50]}}>
-        CREDIT GURUS Copyright &copy; 2023. All rights reserved.
+       <Typography variant='overline' component='div' sx={{width: '100%', textAlign: 'center', fontWeight: 'bold', fontSize: {xs: '.55rem', sm: '1rem'}, color: grey[50]}}>
+        <a href=''>CREDIT GURUS</a> Copyright &copy; 2023. All rights reserved.
        </Typography>
      
       </Card>
