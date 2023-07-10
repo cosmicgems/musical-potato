@@ -57,7 +57,7 @@ function Navbar() {
                 textDecoration: 'none',
               }}
             >
-              Credit Gurus
+              Credit Zen
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -112,7 +112,7 @@ function Navbar() {
                 textDecoration: 'none',
               }}
             >
-              CREDIT GURUS
+              CREDIT ZEN
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (

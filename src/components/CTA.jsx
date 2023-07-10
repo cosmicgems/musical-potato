@@ -58,7 +58,7 @@ const CTA = () => {
             </CardContent>
         <CardContent sx={{paddingInline: 0, position: 'absolute', width:'100%'}}>
             <Typography component='div' variant='h5' sx={{width: '100%', textAlign: 'center', marginBlockStart: '6vh', color: lightGreen[500], fontWeight: 'bold'}}>
-                Credit Gurus
+                Credit Zen
             </Typography>
             <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: lightGreen[500]}}>
                 WE&apos;RE IN THIS TOGETHER

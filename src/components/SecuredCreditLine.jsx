@@ -23,7 +23,7 @@ const SecuredCreditLine = () => {
                 Build a Stronger Credit Foundation and Unlock New Possibilities!
                 </Typography>
                 <Typography variant='p' component='div' sx={{width: '100%', textAlign: 'justify', marginBlockEnd: '3vh', paddingInline: '3vw'}}>
-                Is a poor credit score hindering your financial progress? At <span className='company-name'>Credit Gurus</span>, we understand the importance of having a solid credit profile. Our secured credit line assistance offers you the opportunity to rebuild your credit and showcase responsible financial behavior. 
+                Is a poor credit score hindering your financial progress? At <span className='company-name'>Credit Zen</span>, we understand the importance of having a solid credit profile. Our secured credit line assistance offers you the opportunity to rebuild your credit and showcase responsible financial behavior. 
                 </Typography>
                 <Typography variant='p' component='div' sx={{width: '100%', textAlign: 'center'}}>
                 Here&apos;s how we help: 

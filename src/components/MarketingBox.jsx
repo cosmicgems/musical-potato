@@ -16,7 +16,7 @@ const MarketingBox = () => {
                     Credit Repair Solutions
                 </Typography>
                 <Typography variant='p' component='div' sx={{paddingInline: {xs: '6vw'}, marginBlockEnd: {xs:'1vh'}}}>
-                Are past credit mistakes holding you back? Our expert team at <span className='company-name'>Credit Gurus</span> is here to help you break free from the burden of negative inquiries and incorrect personal information on your credit report.
+                Are past credit mistakes holding you back? Our expert team at <span className='company-name'>Credit Zen</span> is here to help you break free from the burden of negative inquiries and incorrect personal information on your credit report.
                 </Typography>
                 <Typography variant='p' component='div' sx={{width: '100%', paddingInline: {xs:'8vw'}}}>
                     With our personalized credit solutions, we can:
