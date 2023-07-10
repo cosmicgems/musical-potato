@@ -6,29 +6,30 @@ import { grey, lightGreen } from '@mui/material/colors';
 const PriceCard = ({tier: {name, description, features, price, options, cta, button}}) => {
   return (
     <>
-        <Card sx={{minHeight: '65vh', marginInline: '3vw', width: '85vw'}}>
+        <Card sx={{minHeight: '65vh', marginInline: '3vw', width: {xs:'85vw', sm:'480px'}, }}>
             <CardContent sx={{}}>
-                <Typography sx={{width: '100%', textAlign: 'center', fontWeight: 'bold' }} variant='p' component='div'>
-                    <span><RocketLaunchRoundedIcon sx={{color: lightGreen[500], fontSize: {xs: '2rem'}}}/></span>{name}
+            <span><RocketLaunchRoundedIcon sx={{color: lightGreen[500], fontSize: {sm: '3rem'}}}/></span>
+                <Typography sx={{width: '100%', textAlign: 'center', fontWeight: 'bold', fontSize:{sm:'2.5rem'}, marginBlockEnd:{xs:'1vh'} }} variant='p' component='div'>
+                    {name}
                 </Typography>
-                <Typography sx={{width: '100%', textAlign: 'center', fontSize: '.65rem' }} variant='body' component='div'>
+                <Typography sx={{width: '100%', textAlign: 'center', fontSize: {xs:'.65rem', sm:'1.15rem'}, marginBlockEnd:{xs:'2vh'} }} variant='body' component='div'>
                     {description}
                 </Typography>
                 <ul className='mb-3'  style={{listStyleType:'initial', listStylePosition: 'inside',}}>
                     {features?.map((f, i) => {
                         return (
                             <li key={i*3} className='mb-1'>
-                                <Typography variant='p' sx={{fontSize: '.65rem'}}>
+                                <Typography variant='p' sx={{fontSize: {xs:'.65rem', sm:'1.15rem'}}}>
                                     {f}
                                 </Typography>
                             </li>
                         )
                     })}
                 </ul>
-                <Typography variant='h5' component='div' sx={{width: '100%', textAlign: 'center', fontWeight: 'bold', color: lightGreen[500], marginBlock: '2vh'}}>
+                <Typography variant='h5' component='div' sx={{width: '100%', textAlign: 'center', fontWeight: 'bold', color: lightGreen[500], marginBlock: '2vh', fontSize:{sm:'2.5rem'}}}>
                     {price}
                 </Typography>
-                <Typography sx={{width: '100%', textAlign: 'center', fontSize: '.65rem' , marginBlockEnd: '3vh'}} variant='body' component='div'>
+                <Typography sx={{width: '100%', textAlign: 'center', fontSize: '.65rem' , marginBlockEnd: '3vh', fontSize:{xs:'.65rem',sm:'1.15rem'}}} variant='body' component='div'>
                     {cta}
                 </Typography>
 

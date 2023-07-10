@@ -74,11 +74,11 @@ const CTA = () => {
             
         </CardContent>
 
-        <CardContent sx={{height: {xs:'110vh', }, padding: 0}} >
+        <CardContent sx={{height: {xs:'115vh', sm:'120vh' }, padding: 0}} >
             <CardMedia 
                 title='my pic'
                 id='Headliner Image of Woman'
-                sx={{ objectFit: 'cover', minHeight:{xs: '110vh'}, padding: 0}}
+                sx={{ objectFit: 'cover', minHeight:{xs: '115vh', sm: '120vh'}, padding: 0}}
                 image='https://images.pexels.com/photos/5710942/pexels-photo-5710942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
             />
         </CardContent>
