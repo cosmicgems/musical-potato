@@ -44,7 +44,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <Card sx={{bgcolor: '#000000', minHeight: {xs:'125vh', sm:'100vh'}, borderRadius: 0}}>
+    <Card sx={{bgcolor: '#000000', minHeight: {xs:'115vh', sm:'100vh'}, borderRadius: 0}}>
 
             <CardContent
             sx={{  maxWidth: '100%', minWidth:'100%', display:'flex', overflowX: 'scroll', position: 'absolute', paddingInline: 0, overflowWrap: 'unset', marginBlockStart: {xs:'25vh',sm:'23vh'}}}
