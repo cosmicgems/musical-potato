@@ -12,35 +12,40 @@ import Testimonials from '@/components/Testimonial Section/Testimonials'
 import ContactForm from '@/components/ContactForm'
 
 const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
   return (
     <Layout>
       <Box sx={{minHeight: '100vh', width: '100%', bgcolor:grey[50]}}>
-      <div>
+      <section id='Home'>
         <Box sx={{bgcolor: grey[50], }}>
           <Headline/>
         </Box>
-      </div>
-      <div>
+      </section>
+      <section id=''>
         <Box sx={{paddingInline: 0, marginBlockStart: {xs: '5vh', sm: '3vh'}}}>
         </Box>
-      </div>
-      <div >
+      </section>
+      <section id=''>
         <Banner/>
-      </div>
-      <div>
+      </section>
+      <section id='Credit Repair'>
         <MarketingBox/>
-      </div>
-      <div>
+      </section>
+      <section id='Credit Booster'>
         <SecuredCreditLine/>
-      </div>
-      <div>
+      </section>
+      <section id='Pricing'>
         <CTA/>
-      </div>
-      <div>
+      </section>
+      <section id='Our Clients'>
         <Testimonials />
-      </div>
+      </section>
 
 
 

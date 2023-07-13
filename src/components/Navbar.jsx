@@ -13,17 +13,20 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { grey, lightGreen } from '@mui/material/colors';
+import { useRouter } from 'next/router';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Home', 'Credit Repair', 'Credit Booster', 'Pricing', 'Our Clients'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
+  const router = useRouter();
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
@@ -36,11 +39,50 @@ function Navbar() {
     setAnchorElUser(null);
   };
 
+  React.useEffect(() => {
+    const scrollToSection = (sectionId) => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    const handleClick = (page) => {
+      scrollToSection(page);
+      handleCloseNavMenu();
+    };
+
+    pages.forEach((page) => {
+      const button = document.getElementById(`button-${page}`);
+      if (button) {
+        button.addEventListener('click', () => handleClick(page));
+      }
+    });
+
+    return () => {
+      pages.forEach((page) => {
+        const button = document.getElementById(`button-${page}`);
+        if (button) {
+          button.removeEventListener('click', () => handleClick(page));
+        }
+      });
+    };
+  }, []);
+
+  const handleClick = (page) => {
+    handleCloseNavMenu();
+    const sectionId = page.toLowerCase()
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div style={{paddingInline: '33%'}}>
-      <AppBar elevation={0} position="fixed" sx={{bgcolor: 'transparent', paddingInline: '6vw', marginBlockStart: '3vh'}}>
-        <Container  maxWidth="xl" sx={{bgcolor: grey[900], borderRadius: '10px'}}>
-          <Toolbar disableGutters>
+    <div style={{ paddingInline: '33%' }}>
+      <AppBar elevation={0} position="fixed" sx={{ bgcolor: 'transparent', paddingInline: '6vw', marginBlockStart: '3vh' }}>
+        <Container maxWidth="xl" sx={{ bgcolor: grey[900], borderRadius: '10px', }}>
+          <Toolbar disableGutters sx={{}}>
             {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
             <Typography
               variant="h6"
@@ -60,7 +102,8 @@ function Navbar() {
               CREDIT ZEN
             </Typography>
 
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+
+            {/* <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -90,13 +133,11 @@ function Navbar() {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
-                  </MenuItem>
+                  <MenuItem key={page} onClick={() => handleClick(page)}>{page}</MenuItem>
                 ))}
               </Menu>
-            </Box>
-            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, color: lightGreen["A400"] }} />
+            </Box> */}
+            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' },ml:{xs:10, sm:30}, mr: 1, color: lightGreen['A400'] }} />
             <Typography
               variant="h5"
               noWrap
@@ -116,17 +157,13 @@ function Navbar() {
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
-                <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
-                >
+                <Button key={page} id={`button-${page}`} sx={{ my: 2, color: 'white', display: 'block' }}>
                   {page}
                 </Button>
               ))}
             </Box>
 
-            <Box sx={{ flexGrow: 0, display: {xs:'none'} }}>
+            <Box sx={{ flexGrow: 0, display: { xs: 'none' } }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -157,9 +194,9 @@ function Navbar() {
             </Box>
           </Toolbar>
         </Container>
-      </AppBar>      
+      </AppBar>
     </div>
-
   );
 }
+
 export default Navbar;

@@ -9,7 +9,7 @@ import FreeConsultation from './CTA/FreeConsultation';
 
 const MarketingBox = () => {
   return (
-    <Box sx={{paddingInline: '63vw', paddingBlockEnd: '3vh', marginBlockEnd: '5vh'}}>
+    <Box sx={{paddingInline: {xs:'3vw', lg: '17.5vw'}, paddingBlockEnd: '3vh', marginBlockEnd: '5vh'}}>
 
         <Grid container spacing={3} sx={{}}>
             <Grid item xs={12} sx={{}}>
@@ -30,7 +30,7 @@ const MarketingBox = () => {
                     <Grid item sx={{}}>
                         <ul style={{listStyleType:'initial', listStylePosition: 'inside',}}>
                             <li style={{marginBlockEnd: '2vh'}}>                   
-                                    <PlaylistRemove sx={{fontSize: '3rem', color: red[900], marginInlineEnd: '2vw'}} />
+                                    <PlaylistRemove sx={{fontSize: '3rem', color: lightGreen[500], marginInlineEnd: '2vw'}} />
                                     <Typography variant='p' sx={{fontSize: '1rem', fontWeight: 'bold'}}>
                                         REMOVE NEGATIVE INQUIRIES
                                     </Typography>
@@ -50,7 +50,7 @@ const MarketingBox = () => {
                           
                             </li>
                             <li>                   
-                                    <AutoFixHighRoundedIcon sx={{fontSize: '3rem', color: blue[500], marginInlineEnd: '2vw'}} />
+                                    <AutoFixHighRoundedIcon sx={{fontSize: '3rem', color: lightGreen[500], marginInlineEnd: '2vw'}} />
                                     <Typography variant='p' sx={{fontSize: '1rem', fontWeight: 'bold'}}>
                                         ENHANCE CREDIT WORTHINESS
                                     </Typography>

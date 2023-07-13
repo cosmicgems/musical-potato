@@ -80,7 +80,7 @@ const CTA = () => {
                 title='my pic'
                 id='Headliner Image of Woman'
                 sx={{ objectFit: 'cover', minHeight:{xs: '115vh', sm: '120vh'}, padding: 0}}
-                image='https://images.pexels.com/photos/5710942/pexels-photo-5710942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+                image='https://images.pexels.com/photos/1809709/pexels-photo-1809709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
             />
         </CardContent>
         </Card>

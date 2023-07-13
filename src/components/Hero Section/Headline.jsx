@@ -27,11 +27,13 @@ const Headline = () => {
             </Typography>
 
          
-
+<Box sx={{paddingInline: '20vw'}}>
             <Box sx={{marginBottom: 'auto', bgcolor: lightGreen[500], borderRadius: '5px'}}>
                 
                 <FreeConsultation/>
-            </Box>
+            </Box>    
+</Box>
+
         </CardContent>
 
         <CardContent sx={{height: {xs:'100vh', }, padding: 0}} >
@@ -39,7 +41,7 @@ const Headline = () => {
                 title='my pic'
                 id='Headliner Image of Woman'
                 sx={{ objectFit: 'cover',height:{xs: '100vh'}, padding: 0}}
-                image='https://images.pexels.com/photos/3727463/pexels-photo-3727463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+                image='https://images.pexels.com/photos/312839/pexels-photo-312839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
             />
         </CardContent>
         </Card>
