@@ -13,17 +13,17 @@ const Headline = () => {
 
         </CardContent>
         <CardContent sx={{position: 'absolute', width: '100%', paddingInline: {sm: '17.5%'}}}>
-            <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', marginBlockStart: '45vh', color: grey[50], textShadow: '1px 1px #64DD17'}}>
+            <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', marginBlockStart: '30vh', color: grey[50], textShadow: '1px 1px #64DD17', fontSize: '3rem'}}>
                 Turn back the clock, SHAPE YOUR FUTURE!
             </Typography>
-            <Typography component='div' variant='p' sx={{width: '100%', textAlign: 'center', color: grey[50] }}>
-                <span><DoneOutlineRoundedIcon sx={{color: lightGreen[500], fontSize:{xs: '3rem'}}}/></span>Remove Incorrect Personal Information
+            <Typography component='div' variant='p' sx={{width: '100%', textAlign: 'center', color: grey[50], fontSize: '2rem' }}>
+                <span><DoneOutlineRoundedIcon sx={{color: lightGreen[500], fontSize:{xs: '2rem'}}}/></span> Improved Credit Score
             </Typography>
-            <Typography component='div' variant='p' sx={{width: '100%', textAlign: 'center', color: grey[50]}}>
-                <span><DoneOutlineRoundedIcon sx={{color: lightGreen[500], fontSize: {xs: '3rem'}}}/></span>Debt Validation and Custom Disputes
+            <Typography component='div' variant='p' sx={{width: '100%', textAlign: 'center', color: grey[50], fontSize: '2rem'}}>
+                <span><DoneOutlineRoundedIcon sx={{color: lightGreen[500], fontSize: {xs: '2rem'}}}/></span> Increased Financial Opportunities
             </Typography>
-            <Typography component='div' variant='p' sx={{width: '100%', textAlign: 'center', marginBlockEnd: '2vh',  color: grey[50]}}>
-                <span><DoneOutlineRoundedIcon sx={{color: lightGreen[500], fontSize: {xs: '3rem'}}}/></span>Remove Incorrect Personal Information
+            <Typography component='div' variant='p' sx={{width: '100%', textAlign: 'center', marginBlockEnd: '2vh',  color: grey[50], fontSize: '2rem'}}>
+                <span><DoneOutlineRoundedIcon sx={{color: lightGreen[500], fontSize: {xs: '2rem'}}}/></span> Enhanced Financial Well-being
             </Typography>
 
          
