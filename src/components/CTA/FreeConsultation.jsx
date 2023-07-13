@@ -37,7 +37,7 @@ export default function FreeConsultation() {
   const submitForm = async (e) => {
     e.preventDefault()
     setNewForm({name, phoneNumber, email, message, formId})
-    const sendForm = await axios.post('http://localhost:3000/api/new-consultation', {newForm})
+    const sendForm = await axios.post('/api/new-consultation', {newForm})
     console.log(sendForm);
     setEmail('')
     setName('')
