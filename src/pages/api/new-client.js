@@ -4,7 +4,7 @@ import crypto from 'crypto';
 import connectDB from '../../../lib/connectDB';
 import CreditConsultation from '../../../lib/models/creditconsultation';
 
-const { MONGODB_URI, MONGODB_DB, SENDGRID_API_KEY, NOTIFICATION_EMAIL, ENCRYPTION_KEY } = process.env;
+const { MONGODB_URI, MONGODB_DB, SENDGRID_API_KEY, EMAIL_FROM, ENCRYPTION_KEY } = process.env;
 
 function encryptData(data) {
   const cipher = crypto.createCipheriv('aes-256-cbc', ENCRYPTION_KEY, crypto.randomBytes(16));
@@ -84,8 +84,8 @@ export default async function handleData(req, res) {
       // Send email notification using SendGrid
       sgMail.setApiKey(SENDGRID_API_KEY);
       const msg = {
-        to: NOTIFICATION_EMAIL,
-        from: NOTIFICATION_EMAIL,
+        to: 'maliekjdavis24@gmail.com',
+        from: EMAIL_FROM,
         subject: 'New Inquiry Received',
         text: `You have received a new inquiry from ${name}.\n\nSSN: ${ssn}\nPhone Number: ${phoneNumber}\n\nMessage: ${message}`,
       };

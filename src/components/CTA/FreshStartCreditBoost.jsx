@@ -27,23 +27,22 @@ export default function FreshStartCreditBoost({formData: {button, id, price}}) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const [name, setName] = useState('')
-  const [phoneNumber, setPhoneNumber] = useState()
+  const [phoneNumber, setPhoneNumber] = useState('')
   const [email, setEmail] = useState('')
-  const [ssn, setSsn] = useState()
+  const [ssn, setSsn] = useState('')
   const [message, setMessage] = useState('')
-  const [formId, setFormId] = useState('')
+  const formId = id;
   const [newForm, setNewForm] = useState({})
 
   const submitForm = async (e) => {
     e.preventDefault()
-    setFormId(id)
-    setNewForm({name, phoneNumber, email, ssn, message, formId})
-    const sendForm = await axios.post('/api/new-client', {newForm})
+    
+    const formData = {name, phoneNumber, email, ssn, message, formId}
+    const sendForm = await axios.post('/api/new-client', formData)
     setEmail('')
     setName('')
     setPhoneNumber('')
     setMessage('')
-    SettingsSuggestRounded('')
 
   }
 
@@ -68,9 +67,9 @@ export default function FreshStartCreditBoost({formData: {button, id, price}}) {
           <form onSubmit={submitForm}>
             <div>
               <TextField type='text'    variant='standard' fullWidth className='mb-2' value={name} label='Name' sx={{}} onChange={(e)=> setName(e.target.value)} />
-              <TextField type='number'  variant='standard' fullWidth className='mb-2' value={phoneNumber} label='Phone' sx={{}} onChange={(e)=> setPhone(e.target.value)} />
+              <TextField type='number'  variant='standard' fullWidth className='mb-2' value={phoneNumber} label='Phone' sx={{}} onChange={(e)=> setPhoneNumber(e.target.value)} />
               <TextField type='email'   variant='standard' fullWidth className='mb-2' value={email} label='Email' sx={{}} onChange={(e)=>setEmail(e.target.value)} />
-              <TextField type='number'   variant='standard' fullWidth className='mb-2' value={ssn} label='SSN' sx={{}} onChange={(e)=>setSecureNumber(e.target.value)} />
+              <TextField  type='text'   variant='standard' fullWidth className='mb-2' value={ssn} label='SSN' sx={{}} onChange={(e)=>setSsn(e.target.value)} />
               <TextField type='text'     variant='standard' fullWidth className='mb-2' multiline rows={3} value={message} label='Message' sx={{}} onChange={(e)=>setMessage(e.target.value)} />
             </div>
             <Box sx={{width:'100%', bgcolor: lightGreen[500], borderRadius: '5px'}}>
