@@ -67,7 +67,7 @@ export default async function handleData(req, res) {
     //   const encryptedSSN = encryptData(ssn);
 
       // Store data in MongoDB
-      connectDB()
+      await connectDB()
       let form = await new CreditConsultation()
 
       form.type = formId

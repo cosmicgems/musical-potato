@@ -9,7 +9,7 @@ import FreeConsultation from './CTA/FreeConsultation';
 
 const MarketingBox = () => {
   return (
-    <Box sx={{paddingInline: '3vw', paddingBlockEnd: '3vh', marginBlockEnd: '5vh'}}>
+    <Box sx={{paddingInline: '63vw', paddingBlockEnd: '3vh', marginBlockEnd: '5vh'}}>
 
         <Grid container spacing={3} sx={{}}>
             <Grid item xs={12} sx={{}}>

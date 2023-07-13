@@ -15,7 +15,7 @@ const SecuredCreditLine = () => {
   return (
     <Box className="green-gradient-background" sx={{paddingInline: '3vw', paddingBlockStart: '5vh'}}>
 
-        <Grid container spacing={3} sx={{color: grey[50], paddingInline: '17vw'}}>
+        <Grid container spacing={3} sx={{color: grey[50], paddingInline: {md:'17vw'}}}>
             <Grid item xs={12} sx={{}}>
                 <Typography variant='h5' component='div' sx={{width: '100%', textAlign: 'center', marginBlockEnd: '2vh', color: grey[50], fontWeight: 'bold'}}>
                     Credit BOOSTER
