@@ -4,7 +4,7 @@ import crypto from 'crypto';
 import connectDB from '../../../lib/connectDB';
 import CreditConsultation from '../../../lib/models/creditconsultation';
 
-const { MONGODB_URI, MONGODB_DB, SENDGRID_API_KEY, NOTIFICATION_EMAIL, ENCRYPTION_KEY } = process.env;
+const { MONGODB_URI, MONGODB_DB, SENDGRID_API_KEY, EMAIL_FROM, ENCRYPTION_KEY } = process.env;
 
 function encryptData(data) {
   const cipher = crypto.createCipheriv('aes-256-cbc', ENCRYPTION_KEY, crypto.randomBytes(16));
@@ -35,17 +35,15 @@ function isValidEmail(email) {
 
 export default async function handleData(req, res) {
   if (req.method === 'POST') {
-    const { name, email, ssn, phoneNumber, message, formId } = req.body;
+    const { name, email, phoneNumber, message, formId } = req.body.newForm;
     console.log(req.body);
 
     // Validate form fields
-    if (!name || !email || !ssn || !phoneNumber || !message) {
+    if (!name || !email || !phoneNumber || !message) {
       return res.status(400).json({ message: 'All fields are required.' });
     }
 
-    if (!isValidSSN(ssn)) {
-      return res.status(400).json({ message: 'Invalid SSN.' });
-    }
+
 
     if (!isValidPhoneNumber(phoneNumber)) {
       return res.status(400).json({ message: 'Invalid phone number.' });
@@ -66,7 +64,7 @@ export default async function handleData(req, res) {
 
     try {
       // Encrypt sensitive data
-      const encryptedSSN = encryptData(ssn);
+    //   const encryptedSSN = encryptData(ssn);
 
       // Store data in MongoDB
       connectDB()
@@ -75,7 +73,6 @@ export default async function handleData(req, res) {
       form.type = formId
       form.name = name
       form.email = email 
-      form.ssn = encryptedSSN
       form.message = message
       form.phoneNumber = phoneNumber 
 
@@ -84,10 +81,10 @@ export default async function handleData(req, res) {
       // Send email notification using SendGrid
       sgMail.setApiKey(SENDGRID_API_KEY);
       const msg = {
-        to: NOTIFICATION_EMAIL,
-        from: NOTIFICATION_EMAIL,
+        to: 'maliekjdavis24@gmail.com',
+        from: EMAIL_FROM,
         subject: 'New Inquiry Received',
-        text: `You have received a new inquiry from ${name}.\n\nSSN: ${ssn}\nPhone Number: ${phoneNumber}\n\nMessage: ${message}`,
+        text: `You have received a new inquiry from ${name}.\n\nPhone Number: ${phoneNumber}\n\nMessage: ${message}`,
       };
       await sgMail.send(msg);
 

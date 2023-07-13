@@ -41,7 +41,7 @@ function Navbar() {
       <AppBar elevation={0} position="fixed" sx={{bgcolor: 'transparent', paddingInline: '6vw', marginBlockStart: '3vh'}}>
         <Container  maxWidth="xl" sx={{bgcolor: grey[900], borderRadius: '10px'}}>
           <Toolbar disableGutters>
-            <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+            {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
             <Typography
               variant="h6"
               noWrap
@@ -57,7 +57,7 @@ function Navbar() {
                 textDecoration: 'none',
               }}
             >
-              Credit Zen
+              CREDIT ZEN
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

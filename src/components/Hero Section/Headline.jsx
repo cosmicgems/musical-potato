@@ -3,6 +3,7 @@ import React from 'react'
 import Button from '@mui/material/Button';
 import DoneOutlineRoundedIcon from '@mui/icons-material/DoneOutlineRounded';
 import { green, grey, lightGreen } from '@mui/material/colors';
+import FreeConsultation from '../CTA/FreeConsultation';
 
 const Headline = () => {
   return (
@@ -29,9 +30,7 @@ const Headline = () => {
 
             <Box sx={{marginBottom: 'auto', bgcolor: lightGreen[500], borderRadius: '5px'}}>
                 
-                <Button type='button' variant='contained' fullWidth size='large' sx={{color: grey[50]}} >
-                    SHAPE MY FUTURE!
-                </Button>
+                <FreeConsultation/>
             </Box>
         </CardContent>
 

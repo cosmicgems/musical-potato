@@ -5,6 +5,7 @@ import { blue, green, grey, lightGreen, red } from '@mui/material/colors';
 import { PlaylistRemove } from '@mui/icons-material';
 import ChecklistRoundedIcon from '@mui/icons-material/ChecklistRounded';
 import AutoFixHighRoundedIcon from '@mui/icons-material/AutoFixHighRounded';
+import FreeConsultation from './CTA/FreeConsultation';
 
 const MarketingBox = () => {
   return (
@@ -70,9 +71,7 @@ const MarketingBox = () => {
                         Partner with us and witness the transformation as we pave the way to a brighter financial future. 
                     </Typography>
                     <Box fullWidth sx={{bgcolor: lightGreen[500], borderRadius:'5px'}}>
-                        <Button variant='filled' fullWidth size='lg' sx={{color: grey[50]}}>
-                            Start Credit Transformation
-                        </Button>
+                        <FreeConsultation/>
                     </Box>
                 </Box>
 

@@ -18,39 +18,36 @@ const style = {
   border: '2px solid #000',
   boxShadow: 24,
   p: 4,
-  borderRadius:'5px',
+  borderRadius:'5px', 
   textAlign: 'center',
 };
 
-export default function FreshStartCreditBoost({formData: {button, id, price}}) {
+export default function FreeConsultation() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const [name, setName] = useState('')
-  const [phoneNumber, setPhoneNumber] = useState()
+  const [phoneNumber, setPhoneNumber] = useState('')
   const [email, setEmail] = useState('')
-  const [ssn, setSsn] = useState()
   const [message, setMessage] = useState('')
-  const [formId, setFormId] = useState('')
+  const [formId, setFormId] = useState('consultation-free')
   const [newForm, setNewForm] = useState({})
 
+  
   const submitForm = async (e) => {
     e.preventDefault()
-    setFormId(id)
-    setNewForm({name, phoneNumber, email, ssn, message, formId})
-    const sendForm = await axios.post('/api/new-client', {newForm})
+    setNewForm({name, phoneNumber, email, message, formId})
+    const sendForm = await axios.post('http://localhost:3000/api/new-consultation', {newForm})
+    console.log(sendForm);
     setEmail('')
     setName('')
     setPhoneNumber('')
     setMessage('')
-    SettingsSuggestRounded('')
 
   }
-
-
   return (
     <div style={{borderRadius: '5px'}}>
-      <Button onClick={handleOpen}>{button}</Button>
+      <Button sx={{width: '100%'}} onClick={handleOpen}>Free Credit Insight</Button>
       <Modal
       sx={{borderRadius: '5px'}}
         open={open}
@@ -63,15 +60,17 @@ export default function FreshStartCreditBoost({formData: {button, id, price}}) {
             Credit Zen
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Let&apos;s Get Started On Your Journey to Financial Freedom
+            We&apos;re in this together!
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            Free Consultation
           </Typography>
           <form onSubmit={submitForm}>
             <div>
-              <TextField type='text'    variant='standard' fullWidth className='mb-2' value={name} label='Name' sx={{}} onChange={(e)=> setName(e.target.value)} />
-              <TextField type='number'  variant='standard' fullWidth className='mb-2' value={phoneNumber} label='Phone' sx={{}} onChange={(e)=> setPhone(e.target.value)} />
-              <TextField type='email'   variant='standard' fullWidth className='mb-2' value={email} label='Email' sx={{}} onChange={(e)=>setEmail(e.target.value)} />
-              <TextField type='number'   variant='standard' fullWidth className='mb-2' value={ssn} label='SSN' sx={{}} onChange={(e)=>setSecureNumber(e.target.value)} />
-              <TextField type='text'     variant='standard' fullWidth className='mb-2' multiline rows={3} value={message} label='Message' sx={{}} onChange={(e)=>setMessage(e.target.value)} />
+              <TextField variant='standard' fullWidth className='mb-2' value={name} label='Name' sx={{}} onChange={(e)=> setName(e.target.value)} />
+              <TextField variant='standard' fullWidth className='mb-2' value={phoneNumber} label='Phone' sx={{}} onChange={(e)=> setPhoneNumber(e.target.value)} />
+              <TextField variant='standard' fullWidth className='mb-2' value={email} label='Email' sx={{}} onChange={(e)=>setEmail(e.target.value)} />
+              <TextField variant='standard' fullWidth className='mb-2' multiline rows={3} value={message} label='Message' sx={{}} onChange={(e)=>setMessage(e.target.value)} />
             </div>
             <Box sx={{width:'100%', bgcolor: lightGreen[500], borderRadius: '5px'}}>
               <Button sx={{width: '100%', paddingInline:'17.5vw'}} type='submit' variant='filled'>

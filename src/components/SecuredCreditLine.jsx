@@ -9,12 +9,13 @@ import ArchitectureRoundedIcon from '@mui/icons-material/ArchitectureRounded';
 import AccountBalanceRoundedIcon from '@mui/icons-material/AccountBalanceRounded';
 import DesignServicesRoundedIcon from '@mui/icons-material/DesignServicesRounded';
 import InsertDriveFileRoundedIcon from '@mui/icons-material/InsertDriveFileRounded';
+import FreeConsultation from './CTA/FreeConsultation';
 
 const SecuredCreditLine = () => {
   return (
-    <Box className="green-gradient-background" sx={{paddingInline: '3vw', paddingBlockStart: '5vh', bgcolor: "transparent"}}>
+    <Box className="green-gradient-background" sx={{paddingInline: '3vw', paddingBlockStart: '5vh'}}>
 
-        <Grid container spacing={3} sx={{color: grey[50]}}>
+        <Grid container spacing={3} sx={{color: grey[50], paddingInline: '17vw'}}>
             <Grid item xs={12} sx={{}}>
                 <Typography variant='h5' component='div' sx={{width: '100%', textAlign: 'center', marginBlockEnd: '2vh', color: grey[50], fontWeight: 'bold'}}>
                     Credit BOOSTER
@@ -97,9 +98,7 @@ const SecuredCreditLine = () => {
                     Unlock the door to a brighter financial future with our secured credit line assistance. Rebuild your credit, gain confidence, and open up new opportunities 
                 </Typography>
                 <Box fullWidth sx={{ borderRadius:'5px', bgcolor: grey[50], marginBlockEnd: '3vh' }}>
-                    <Button variant='filled' fullWidth size='lg' sx={{color: lightGreen[500], paddingBlock: '1vh'}}>
-                        BOOST MY CREDIT NOW!
-                    </Button>
+                    <FreeConsultation/>
                 </Box>
             </Box>
                 

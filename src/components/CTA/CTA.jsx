@@ -1,7 +1,5 @@
 import { Box, Card, CardContent, CardMedia, Stack, TextField, Typography } from '@mui/material'
 import React from 'react'
-import Button from '@mui/material/Button';
-import DoneOutlineRoundedIcon from '@mui/icons-material/DoneOutlineRounded';
 import { green, grey, lightGreen } from '@mui/material/colors';
 import PriceCard from '../PriceCard';
 
@@ -51,7 +49,7 @@ const CTA = () => {
     <>
         <Card sx={{ borderRadius: 0, paddingInline: 0,}}>
             <CardContent
-            sx={{  maxWidth: '100%', minWidth:'100%', display:'flex', overflow: 'scroll', position: 'absolute', paddingInline: 0, overflowWrap: 'unset', marginBlockStart: '30vh'}}
+            sx={{  maxWidth: '100%', minWidth:'100%', display:'flex', overflow: 'scroll', overflowY:'hidden', overflowX: 'auto', position: 'absolute', paddingInline: 0, overflowWrap: 'unset', marginBlockStart: '30vh'}}
             >
                 <Stack direction='row' justifyContent="center" alignItems='center' style={{display:'flex', textAlign:'center', paddingInline: 0}}>
                 {information.map((tier, i) => {
