@@ -7,7 +7,7 @@ import Banner from '@/components/Banner'
 import MarketingBox from '@/components/MarketingBox'
 import { grey } from '@mui/material/colors'
 import SecuredCreditLine from '@/components/SecuredCreditLine'
-import CTA from '@/components/CTA'
+import CTA from '@/components/CTA/CTA'
 import Testimonials from '@/components/Testimonial Section/Testimonials'
 import ContactForm from '@/components/ContactForm'
 
@@ -40,9 +40,6 @@ export default function Home() {
       </div>
       <div>
         <Testimonials />
-      </div>
-      <div>
-        <ContactForm />
       </div>
 
 

@@ -2,8 +2,13 @@ import { Box, Button, Card, CardContent, Typography } from '@mui/material'
 import React from 'react'
 import RocketLaunchRoundedIcon from '@mui/icons-material/RocketLaunchRounded';
 import { grey, lightGreen } from '@mui/material/colors';
+import FreshStartCreditBoost from './CTA/FreshStartCreditBoost';
 
-const PriceCard = ({tier: {name, description, features, price, options, cta, button}}) => {
+const PriceCard = ({tier: {name, description, features, price, options, cta, button, id}}) => {
+    const formData = {
+        button, id, price
+    };
+
   return (
     <>
         <Card sx={{minHeight: '65vh', marginInline: '3vw', width: {xs:'85vw', sm:'480px'}, }}>
@@ -35,9 +40,7 @@ const PriceCard = ({tier: {name, description, features, price, options, cta, but
 
             <Box sx={{marginBottom: 'auto', bgcolor: lightGreen[500], borderRadius: '5px'}}>
                 
-                <Button type='button' variant='contained' fullWidth size='large' sx={{color: grey[50]}} >
-                    {button}
-                </Button>
+                <FreshStartCreditBoost formData={formData}/>
             </Box>
             </CardContent>
         </Card>

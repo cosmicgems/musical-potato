@@ -6,7 +6,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-      <Card sx={{bgcolor: grey[900], borderRadius: 0,paddingBlock: {xs: '2vh'}}} >
+      <Card elevation={0} sx={{bgcolor: grey[900], borderRadius: 0,paddingBlock: {xs: '2vh'}}} >
         <Stack direction='row' justifyContent="space-between"  alignItems='center' sx={{display:'flex', textAlign:'center', paddingInline: {xs:'25vw',sm:'33vw'}, }}>
           <div>
             <Instagram  sx={{fontSize: {xs:'2rem', sm: '3rem'}, color: pink[500]}}/>
