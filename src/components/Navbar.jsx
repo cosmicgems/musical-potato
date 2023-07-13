@@ -137,13 +137,14 @@ function Navbar() {
                 ))}
               </Menu>
             </Box> */}
-            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' },ml:{xs:10, sm:30}, mr: 1, color: lightGreen['A400'] }} />
+            
             <Typography
               variant="h5"
               noWrap
               component="a"
               href=""
               sx={{
+                px:{xs:'30%', sm:'45%'},
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
                 flexGrow: 1,
