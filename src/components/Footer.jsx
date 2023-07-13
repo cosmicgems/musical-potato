@@ -6,7 +6,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-      <Card elevation={0} sx={{bgcolor: grey[900], borderRadius: 0,paddingBlock: {xs: '2vh'}}} >
+      <Card className='green-gradient-background' elevation={0} sx={{bgcolor: 'transparent', borderRadius: 0,paddingBlock: {xs: '2vh'}}} >
         <Stack direction='row' justifyContent="space-evenly"  alignItems='center' sx={{display:'flex', textAlign:'center', paddingInline: {xs:'35vw',sm:'40vw'}, }}>
       
           
