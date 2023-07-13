@@ -44,7 +44,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <Card elevation={0} sx={{bgcolor: grey[900], minHeight: {xs:'120vh', sm:'100vh'}, borderRadius: 0}}>
+    <Card elevation={0} className='green-gradient-background' sx={{bgcolor: grey[900], minHeight: {xs:'120vh', sm:'100vh'}, borderRadius: 0}}>
 
             <CardContent
             sx={{  maxWidth: '100%', minWidth:'100%', display:'flex', overflowX: 'scroll', position: 'absolute', paddingInline: 0, overflowWrap: 'unset', marginBlockStart: {xs:'25vh',sm:'23vh'}}}

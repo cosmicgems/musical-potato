@@ -81,7 +81,7 @@ function Navbar() {
   return (
     <div style={{ paddingInline: '33%' }}>
       <AppBar elevation={0} position="fixed" sx={{ bgcolor: 'transparent', paddingInline: '6vw', marginBlockStart: '3vh' }}>
-        <Container maxWidth="xl" sx={{ bgcolor: grey[900], borderRadius: '10px', }}>
+        <Container maxWidth="xl" sx={{ bgcolor: {xs:lightGreen[500] ,md:grey[900]}, borderRadius: '10px', }}>
           <Toolbar disableGutters sx={{}}>
             {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
             <Typography
@@ -144,11 +144,10 @@ function Navbar() {
               component="a"
               href=""
               sx={{
-                px:{xs:'30%', sm:'45%'},
+                px:{xs:'37%', sm:'44%'},
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
                 flexGrow: 1,
-                fontFamily: 'monospace',
                 fontWeight: 800,
                 color: 'inherit',
                 textDecoration: 'none',
