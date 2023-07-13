@@ -11,7 +11,7 @@ const PriceCard = ({tier: {name, description, features, price, options, cta, but
 
   return (
     <>
-        <Card sx={{minHeight: '65vh', marginInline: '3vw', width: {xs:'85vw', sm:'480px'}, }}>
+        <Card sx={{minHeight: '65vh', marginInline: '3vw', width: {xs:'85vw', sm:'480px'}, backgroundColor: `rgba(255, 255, 255, 0.8)`  }}>
             <CardContent sx={{}}>
             <span><RocketLaunchRoundedIcon sx={{color: lightGreen[500], fontSize: {sm: '3rem'}}}/></span>
                 <Typography sx={{width: '100%', textAlign: 'center', fontWeight: 'bold', fontSize:{sm:'1.5rem'}, marginBlockEnd:{xs:'1vh'} }} variant='p' component='div'>
