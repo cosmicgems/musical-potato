@@ -32,7 +32,7 @@ const MarketingBox = () => {
                             <li style={{marginBlockEnd: '2vh'}}>                   
                                     <PlaylistRemove sx={{fontSize: '3rem', color: lightGreen[500], marginInlineEnd: '2vw'}} />
                                     <Typography variant='p' sx={{fontSize: '1rem', fontWeight: 'bold'}}>
-                                        REMOVE NEGATIVE INQUIRIES
+                                        NEGATIVE INQUIRIES
                                     </Typography>
                                     <Typography variant='p' component='div' sx={{width: '100%', paddingInlineStart: '6vw'}}>
                                     We&apos;ll meticulously analyze your credit report, identify inaccuracies, and launch strategic disputes to remove those damaging negative marks, giving your creditworthiness a significant boost.
@@ -52,7 +52,7 @@ const MarketingBox = () => {
                             <li>                   
                                     <AutoFixHighRoundedIcon sx={{fontSize: '3rem', color: lightGreen[500], marginInlineEnd: '2vw'}} />
                                     <Typography variant='p' sx={{fontSize: '1rem', fontWeight: 'bold'}}>
-                                        ENHANCE CREDIT WORTHINESS
+                                        ENHANCE CREDIT
                                     </Typography>
                                     <Typography variant='p' component='div' sx={{width: '100%', paddingInlineStart: '6vw'}}>
                                     By addressing these issues head-on, we empower you to improve your creditworthiness, which can increase your chances of loan approvals, better interest rates, and access to financial opportunities.

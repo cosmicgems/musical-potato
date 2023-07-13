@@ -50,7 +50,7 @@ const SecuredCreditLine = () => {
                                 <li style={{marginBlockEnd: '3vh'}}>                   
                                         <AccountBalanceRoundedIcon sx={{fontSize: '3rem', color: grey[50], marginInlineEnd: '2vw'}} />
                                         <Typography variant='p' sx={{fontSize: '1rem', fontWeight: 'bold', color: grey[50]}}>
-                                            TAILORED FINANCIAL EVALUATION
+                                            TAILORED EVALUATION
                                         </Typography>
                                         <Typography variant='p' component='div' sx={{width: '100%', paddingInlineStart: '6vw'}}>
                                         We&apos;ll evaluate your unique financial situation and recommend the ideal secured credit line amount that aligns with your income, expenses, and existing debt obligations.

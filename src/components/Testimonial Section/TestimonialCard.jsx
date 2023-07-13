@@ -9,13 +9,13 @@ const TestimonialCard = ({testimonial:{name, image, stars, review, points}}) => 
     <>
         <Card sx={{marginInline: '2vw'}} >
             
-        <CardContent sx={{bgcolor: grey[900], position: 'absolute', opacity: '75%',  minHeight: {xs:'600px'}, width:'380px',}}>
+        <CardContent sx={{bgcolor: grey[900], position: 'absolute', opacity: '75%',  minHeight: {xs:'750px'}, width:'380px',}}>
 
         </CardContent>
         <CardContent
         justifyContent='center' 
         alignItems='center'
-            sx={{  minHeight: {xs:'600px'}, width:'380px', display:'flex', position: 'absolute', flexDirection: 'column', paddingBlockStart: {xs:'35vh', sm:'25vh'}}}
+            sx={{  minHeight: {xs:'750px'}, width:'380px', display:'flex', position: 'absolute', flexDirection: 'column', paddingBlockStart: {xs:'35vh', sm:'25vh'}}}
             >
                 <Typography variant='subtitle' component='div' sx={{color: lightGreen[500]}}>
                 <span style={{fontWeight: 'bold', color: '#EEE'}}>{name}</span> <span><AddCircleOutlineRoundedIcon sx={{fontSize: '1rem'}}/></span>{points}pts
@@ -26,14 +26,14 @@ const TestimonialCard = ({testimonial:{name, image, stars, review, points}}) => 
                     })}
                 </Stack>
                 <Typography variant='body' component='div' sx={{color: grey[50]}}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea eaque blanditiis corrupti cumque. Magnam atque doloremque dicta quidem accusantium culpa aperiam itaque rem laboriosam!
+                {review}
                 </Typography>
             </CardContent>
             <CardMedia 
                 title='image'
                 id='image'
                 image={image}
-                sx={{objectFit: 'cover', minHeight: {xs:'600px'}, width: '380px'}}
+                sx={{objectFit: 'cover', minHeight: {xs:'750px'}, width: '380px'}}
             />
 
  
