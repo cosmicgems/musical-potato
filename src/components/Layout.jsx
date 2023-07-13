@@ -12,7 +12,7 @@ const Layout = ({children}) => {
     <>
     <div className='layout' style={{minHeight: '100vh', }}>
       <Head>
-        <title>Credit Guru</title>
+        <title>Credit Zen</title>
       </Head>
       <header>
       <Navbar />

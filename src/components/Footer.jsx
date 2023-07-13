@@ -11,7 +11,7 @@ const Footer = () => {
       
           
 
-          <Button href='https://www.facebook.com/people/Credit-Zen/100094328307545/?mibextid=LQQJ4d'>
+          <Button href='https://www.facebook.com/profile.php?id=100094328307545&mibextid=LQQJ4d'>
             <Facebook  sx={{fontSize: {xs:'2rem', sm: '3rem'}, color: blue['A700']}}/>            
           </Button>
 
