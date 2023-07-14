@@ -10,6 +10,7 @@ import SecuredCreditLine from '@/components/SecuredCreditLine'
 import CTA from '@/components/CTA/CTA'
 import Testimonials from '@/components/Testimonial Section/Testimonials'
 import ContactForm from '@/components/ContactForm'
+import { motion } from "framer-motion"
 
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
