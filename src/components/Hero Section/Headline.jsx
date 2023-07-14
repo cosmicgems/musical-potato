@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import DoneOutlineRoundedIcon from '@mui/icons-material/DoneOutlineRounded';
 import { green, grey, lightGreen } from '@mui/material/colors';
 import FreeConsultation from '../CTA/FreeConsultation';
+import { SelfImprovementRounded } from '@mui/icons-material';
 
 const Headline = () => {
   return (
@@ -13,8 +14,14 @@ const Headline = () => {
 
         </CardContent>
         <CardContent sx={{position: 'absolute', width: '100%', paddingInline: {sm: '17.5%'}}}>
-            <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', marginBlockStart: '30vh', color: grey[50], textShadow: '1px 1px #64DD17', fontSize: '3rem'}}>
-                Turn back the clock, SHAPE YOUR FUTURE!
+            <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: lightGreen[500], textShadow: '1px 1px #64DD17', fontSize: '3rem', marginBlockStart: '30vh',}}>
+                <SelfImprovementRounded sx={{color: lightGreen[500], fontSize: {xs:'4rem',sm: '4rem'}}} />
+            </Typography>
+            <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: grey[50], textShadow: '1px 1px #64DD17', fontSize: '3rem'}}>
+                Turn Back The Clock
+            </Typography>
+            <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: grey[50], textShadow: '1px 1px #64DD17', fontSize: '3rem'}}>
+                SHAPE YOUR FUTURE!
             </Typography>
             <Typography component='div' variant='p' sx={{width: '100%', textAlign: 'center', color: grey[50], fontSize: '2rem' }}>
                 <span><DoneOutlineRoundedIcon sx={{color: lightGreen[500], fontSize:{xs: '2rem'}}}/></span> Improved Credit Score
@@ -27,12 +34,12 @@ const Headline = () => {
             </Typography>
 
          
-<Box sx={{paddingInline: '20vw'}}>
-            <Box sx={{marginBottom: 'auto', bgcolor: lightGreen[500], borderRadius: '5px'}}>
-                
-                <FreeConsultation/>
-            </Box>    
-</Box>
+            <Box sx={{paddingInline: '20vw'}}>
+                        <Box sx={{marginBottom: 'auto', bgcolor: lightGreen[500], borderRadius: '5px'}}>
+                            
+                            <FreeConsultation/>
+                        </Box>    
+            </Box>
 
         </CardContent>
 

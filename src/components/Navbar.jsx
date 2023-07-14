@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { grey, lightGreen } from '@mui/material/colors';
 import { useRouter } from 'next/router';
+import { SelfImprovementRounded } from '@mui/icons-material';
 
 const pages = ['Home', 'Credit Repair', 'Credit Booster', 'Pricing', 'Our Clients'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -83,7 +84,7 @@ function Navbar() {
       <AppBar elevation={0} position="fixed" sx={{ bgcolor: 'transparent', paddingInline: '6vw', marginBlockStart: '3vh' }}>
         <Container maxWidth="xl" sx={{ bgcolor: {xs:lightGreen[500] ,md:grey[900]}, borderRadius: '10px', }}>
           <Toolbar disableGutters sx={{}}>
-            {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
+            <SelfImprovementRounded sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
             <Typography
               variant="h6"
               noWrap
@@ -137,14 +138,15 @@ function Navbar() {
                 ))}
               </Menu>
             </Box> */}
-            
+            <Box sx={{ml:{xs:13, sm:35}, display: 'flex'}}>
+            <SelfImprovementRounded sx={{ display: { xs: 'flex', md: 'none' }, fontSize: '2rem'}} />
             <Typography
               variant="h5"
               noWrap
               component="a"
               href=""
               sx={{
-                px:{xs:'37%', sm:'44%'},
+                
                 mr: 2,
                 display: { xs: 'flex', md: 'none' },
                 flexGrow: 1,
@@ -154,7 +156,9 @@ function Navbar() {
               }}
             >
               CREDIT ZEN
-            </Typography>
+            </Typography>              
+            </Box>
+
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
                 <Button key={page} id={`button-${page}`} sx={{ my: 2, color: 'white', display: 'block' }}>

@@ -17,15 +17,15 @@ const TestimonialCard = ({testimonial:{name, image, stars, review, points}}) => 
         alignItems='center'
             sx={{  minHeight: {xs:'750px'}, width:'380px', display:'flex', position: 'absolute', flexDirection: 'column', paddingBlockStart: {xs:'35vh', sm:'25vh'}}}
             >
-                <Typography variant='subtitle' component='div' sx={{color: lightGreen[500]}}>
-                <span style={{fontWeight: 'bold', color: '#EEE'}}>{name}</span> <span><AddCircleOutlineRoundedIcon sx={{fontSize: '1rem'}}/></span>{points}pts
+                <Typography variant='subtitle' component='div' sx={{color: lightGreen[500], fontSize: '1.75rem'}}>
+                <span style={{fontWeight: 'bold', color: '#EEE', fontSize:'1.75rem'}}>{name}</span> <span><AddCircleOutlineRoundedIcon sx={{fontSize: '1.75rem'}}/></span>{points}pts
                 </Typography>
                 <Stack direction='row' sx={{}}  justifyContent='space-evenly' alignItems='center'>
                     {stars.map((i) => {
                         return <StarRateRoundedIcon key={i*132+132} sx={{fontSize: '3rem', color:lightGreen[500]}} />
                     })}
                 </Stack>
-                <Typography variant='body' component='div' sx={{color: grey[50]}}>
+                <Typography variant='body' component='div' sx={{color: grey[50], fontSize: '1.25rem'}}>
                 {review}
                 </Typography>
             </CardContent>

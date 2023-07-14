@@ -3,6 +3,7 @@ import React from 'react'
 import PriceCard from '../PriceCard'
 import { grey, lightGreen } from '@mui/material/colors'
 import TestimonialCard from './TestimonialCard'
+import { SelfImprovementRounded } from '@mui/icons-material'
 
 const testimonials = [
   {
@@ -57,7 +58,12 @@ const Testimonials = () => {
                 </Stack>
             </CardContent>
         <CardContent sx={{paddingInline: 0, position: 'absolute', width:'100%'}}>
-            <Typography component='div' variant='h5' sx={{width: '100%', textAlign: 'center', marginBlockStart: '6vh', color: lightGreen[500], fontWeight: 'bold'}}>
+        
+      
+            <Typography component='div' variant='h6' sx={{ marginBlockStart: '6vh',width: '100%', textAlign: 'center', color: lightGreen[500]}}>
+                  <SelfImprovementRounded sx={{  fontSize: '2rem'}} />
+            </Typography>
+            <Typography component='div' variant='h5' sx={{width: '100%', textAlign: 'center', color: lightGreen[500], fontWeight: 'bold'}}>
                 Credit Zen
             </Typography>
             <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: lightGreen[500]}}>
