@@ -15,7 +15,7 @@ const Layout = ({children}) => {
         <title>Credit Zen</title>
       </Head>
       <header>
-      {/* <Navbar /> */}
+      <Navbar />
         
       </header>
       <main  className={`flex min-h-screen flex-col items-center justify-between  ${inter.className}`}>
