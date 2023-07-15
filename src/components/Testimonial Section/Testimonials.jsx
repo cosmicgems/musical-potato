@@ -4,6 +4,7 @@ import PriceCard from '../PriceCard'
 import { grey, lightGreen } from '@mui/material/colors'
 import TestimonialCard from './TestimonialCard'
 import { SelfImprovementRounded } from '@mui/icons-material'
+import { motion } from "framer-motion"
 
 const testimonials = [
   {
@@ -50,31 +51,72 @@ const Testimonials = () => {
             <CardContent
             sx={{  maxWidth: '100%', minWidth:'100%', display:'flex', overflowX: 'scroll', position: 'absolute', paddingInline: 0, overflowWrap: 'unset', marginBlockStart: {xs:'25vh',sm:'23vh'}}}
             >
+
                 <Stack direction='row' justifyContent="center" alignItems='center' style={{display:'flex', textAlign:'center', paddingInline: 0}}>
                 {testimonials.map((testimonial, i) => {
-                  return <CardContent sx={{}} key={i*99+99}><TestimonialCard testimonial={testimonial} /></CardContent>
+                 
+                  return <CardContent sx={{}} key={i*99+99}>              <motion.div
+              initial={{ opacity: 0, scale: 0.5 + ((i*2)*.01) }}
+              whileInView={{ opacity: 1, scale: 1,
+              transition:{ duration: 0.5 }}}><TestimonialCard testimonial={testimonial} /></motion.div></CardContent>
                 })}
                 
-                </Stack>
+                </Stack>                  
+              
+
             </CardContent>
         <CardContent sx={{paddingInline: 0, position: 'absolute', width:'100%'}}>
         
-      
-            <Typography component='div' variant='h6' sx={{ marginBlockStart: '6vh',width: '100%', textAlign: 'center', color: lightGreen[500]}}>
-                  <SelfImprovementRounded sx={{  fontSize: '2rem'}} />
-            </Typography>
-            <Typography component='div' variant='h5' sx={{width: '100%', textAlign: 'center', color: lightGreen[500], fontWeight: 'bold'}}>
-                Credit Zen
-            </Typography>
-            <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: lightGreen[500]}}>
-                WE&apos;RE IN THIS TOGETHER
-            </Typography>
-            <Typography component='div' variant='subtile' sx={{width: '100%', textAlign: 'center', color: grey[50], paddingInline: '6vw'}}>
-                No matter your credit goals!
-            </Typography>
-            <Typography component='div' variant='subtitle' sx={{width: '100%', textAlign: 'center', color: grey[50], paddingInline: '3vw'}}>
-              Some of our happy clients
-            </Typography>
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1,
+            transition:{ duration: 0.5 }}} >
+              <Typography component='div' variant='h6' sx={{ marginBlockStart: '6vh',width: '100%', textAlign: 'center', color: lightGreen[500]}}>
+                    <SelfImprovementRounded sx={{  fontSize: '2rem'}} />
+              </Typography>
+            </motion.div>   
+
+
+
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1,
+            transition:{ duration: 0.65 }}} >
+              <Typography component='div' variant='h5' sx={{width: '100%', textAlign: 'center', color: lightGreen[500], fontWeight: 'bold'}}>
+                  Credit Zen
+              </Typography>              
+            </motion.div>   
+
+
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1,
+            transition:{ duration: 0.75 }}} >
+              <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: lightGreen[500]}}>
+                  WE&apos;RE IN THIS TOGETHER
+              </Typography>              
+            </motion.div>   
+
+
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1,
+            transition:{ duration: 0.85 }}} >
+              <Typography component='div' variant='subtile' sx={{width: '100%', textAlign: 'center', color: grey[50], paddingInline: '6vw'}}>
+                  No matter your credit goals!
+              </Typography>              
+            </motion.div>   
+
+
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1,
+            transition:{ duration: 0.95 }}} >
+              <Typography component='div' variant='subtitle' sx={{width: '100%', textAlign: 'center', color: grey[50], paddingInline: '3vw'}}>
+                Some of our happy clients
+              </Typography>              
+            </motion.div>   
+
          
 
             

@@ -2,6 +2,7 @@ import { Box, Card, CardContent, CardMedia, Stack, TextField, Typography } from 
 import React from 'react'
 import { green, grey, lightGreen } from '@mui/material/colors';
 import PriceCard from '../PriceCard';
+import { motion } from "framer-motion"
 
  const information = [
     {
@@ -51,28 +52,56 @@ const CTA = () => {
             <CardContent
             sx={{  maxWidth: '100%', minWidth:'100%', display:'flex', overflow: 'scroll', overflowY:'hidden', overflowX: 'auto', position: 'absolute', paddingInline: 0, overflowWrap: 'unset', marginBlockStart: '30vh'}}
             >
-                <Stack direction='row' justifyContent="center" alignItems='center' style={{display:'flex', textAlign:'center', paddingInline: 0}}>
-                {information.map((tier, i) => {
-                    return <PriceCard key={i*33} tier={tier} />
-                })}
-                </Stack>
+                <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileInView={{ opacity: 1, scale: 1,
+                transition:{ duration: 0.5 }
+                }}>
+                    <Stack direction='row' justifyContent="center" alignItems='center' style={{display:'flex', textAlign:'center', paddingInline: 0}}>
+                    {information.map((tier, i) => {
+                        return <PriceCard key={i*33} tier={tier} />
+                    })}
+                    </Stack>
+                </motion.div>
+
             </CardContent>
         <CardContent sx={{paddingInline: 0, position: 'absolute', width:'100%'}}>
-            <Typography component='div' variant='h5' sx={{width: '100%', textAlign: 'center', marginBlockStart: '6vh', color: lightGreen[500], fontWeight: 'bold'}}>
-                Credit Zen
-            </Typography>
-            <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: lightGreen[500]}}>
-                WE&apos;RE IN THIS TOGETHER
-            </Typography>
-            <Typography component='div' variant='subtile' sx={{width: '100%', textAlign: 'center', color: grey[50], paddingInline: '6vw'}}>
-                No matter your credit goals!
-            </Typography>
-            <Typography component='div' variant='subtitle' sx={{width: '100%', textAlign: 'center', color: grey[50], paddingInline: '3vw'}}>
-                120 DAY MONEY BACK GUARANTEE
-            </Typography>
-         
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1,
+            transition:{ duration: 0.5 }}}>
+                <Typography component='div' variant='h5' sx={{width: '100%', textAlign: 'center', marginBlockStart: '6vh', color: lightGreen[500], fontWeight: 'bold'}}>
+                    Credit Zen
+                </Typography>
+            </motion.div>
 
-            
+
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1,
+            transition:{ duration: 0.5 }}}>
+                <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: lightGreen[500]}}>
+                    WE&apos;RE IN THIS TOGETHER
+                </Typography>                
+            </motion.div>
+
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1,
+            transition:{ duration: 0.5 }}}>
+                <Typography component='div' variant='subtile' sx={{width: '100%', textAlign: 'center', color: grey[50], paddingInline: '6vw'}}>
+                    No matter your credit goals!
+                </Typography>                
+            </motion.div>
+
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1,
+            transition:{ duration: 0.5 }}}>
+                <Typography component='div' variant='subtitle' sx={{width: '100%', textAlign: 'center', color: grey[50], paddingInline: '3vw'}}>
+                    120 DAY MONEY BACK GUARANTEE
+                </Typography>                
+            </motion.div>
         </CardContent>
 
         <CardContent sx={{height: {xs:'115vh', sm:'120vh' }, padding: 0}} >
