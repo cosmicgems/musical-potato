@@ -29,24 +29,102 @@ const Headline = () => {
         animate="show"
         >
         <CardContent sx={{position: 'absolute', width: '100%', paddingInline: {sm: '17.5%'}}}>
-            <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: lightGreen[500], textShadow: '1px 1px #64DD17', fontSize: '3rem', marginBlockStart: '30vh',}}>
+        <motion.div
+        drag
+        whileDrag={{ scale: 1.25 }}
+        whileHover={{ scale: 1.25 }}
+        dragSnapToOrigin
+        dragConstraints={{
+        top: -25,
+        left: -25,
+        right: 25,
+        bottom: 25,
+        }}>
+            <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: lightGreen[500], textShadow: '1px 1px #64DD17', fontSize: '3rem', marginBlockStart: {xs:'30vh', md:'20vh' ,xl:'30vh'},}}>
                 <SelfImprovementRounded sx={{color: lightGreen[500], fontSize: {xs:'4rem',sm: '4rem'}}} />
-            </Typography>
-            <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: grey[50], textShadow: '1px 1px #64DD17', fontSize: '3rem'}}>
+            </Typography>            
+        </motion.div>
+  
+        <motion.div
+        drag
+        whileDrag={{ scale: 1.25 }}
+        whileHover={{ scale: 1.25 }}
+        dragSnapToOrigin
+        dragConstraints={{
+        top: -25,
+        left: -25,
+        right: 25,
+        bottom: 25,
+        }}>
+            <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: grey[50], textShadow: '1px 1px #64DD17', fontSize: {xs:'3rem',md:'2.25rem',xl:'3rem',}}}>
                 Turn Back The Clock
-            </Typography>
-            <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: grey[50], textShadow: '1px 1px #64DD17', fontSize: '3rem'}}>
+            </Typography>            
+        </motion.div>
+
+        <motion.div
+        drag
+        whileDrag={{ scale: 1.25 }}
+        whileHover={{ scale: 1.25 }}
+        dragSnapToOrigin
+        dragConstraints={{
+        top: -25,
+        left: -25,
+        right: 25,
+        bottom: 25,
+        }}>
+            <Typography component='div' variant='h6' sx={{width: '100%', textAlign: 'center', color: grey[50], textShadow: '1px 1px #64DD17', fontSize: {xs:'3rem',md:'2.25rem',xl:'3rem',}}}>
                 SHAPE YOUR FUTURE!
-            </Typography>
-            <Typography component='div' variant='p' sx={{width: '100%', textAlign: 'center', color: grey[50], fontSize: '2rem' }}>
+            </Typography>            
+        </motion.div>
+
+        <motion.div
+        drag
+        whileDrag={{ scale: 1.25 }}
+        whileHover={{ scale: 1.25 }}
+        dragSnapToOrigin
+        dragConstraints={{
+        top: -25,
+        left: -25,
+        right: 25,
+        bottom: 25,
+        }}>
+            <Typography component='div' variant='p' sx={{width: '100%', textAlign: 'center', color: grey[50], fontSize: {xs:'2rem',md:'1.5rem',xl:'2rem',}}}>
                 <span><DoneOutlineRoundedIcon sx={{color: lightGreen[500], fontSize:{xs: '2rem'}}}/></span> Improved Credit Score
-            </Typography>
-            <Typography component='div' variant='p' sx={{width: '100%', textAlign: 'center', color: grey[50], fontSize: '2rem'}}>
+            </Typography>            
+        </motion.div>
+
+        <motion.div
+        drag
+        whileDrag={{ scale: 1.25 }}
+        whileHover={{ scale: 1.25 }}
+        dragSnapToOrigin
+        dragConstraints={{
+        top: -25,
+        left: -25,
+        right: 25,
+        bottom: 25,
+        }}>
+            <Typography component='div' variant='p' sx={{width: '100%', textAlign: 'center', color: grey[50], fontSize: {xs:'2rem',md:'1.5rem',xl:'2rem',}}}>
                 <span><DoneOutlineRoundedIcon sx={{color: lightGreen[500], fontSize: {xs: '2rem'}}}/></span> Increased Financial Opportunities
-            </Typography>
-            <Typography component='div' variant='p' sx={{width: '100%', textAlign: 'center', marginBlockEnd: '2vh',  color: grey[50], fontSize: '2rem'}}>
+            </Typography>            
+        </motion.div>
+
+        <motion.div
+        drag
+        whileDrag={{ scale: 1.25 }}
+        whileHover={{ scale: 1.25 }}
+        dragSnapToOrigin
+        dragConstraints={{
+        top: -25,
+        left: -25,
+        right: 25,
+        bottom: 25,
+        }}>
+            <Typography component='div' variant='p' sx={{width: '100%', textAlign: 'center', marginBlockEnd: '2vh',  color: grey[50], fontSize: {xs:'2rem',md:'1.5rem',xl:'2rem',}}}>
                 <span><DoneOutlineRoundedIcon sx={{color: lightGreen[500], fontSize: {xs: '2rem'}}}/></span> Enhanced Financial Well-being
-            </Typography>
+            </Typography>            
+        </motion.div>
+
 
          <motion.div
          whileHover={{

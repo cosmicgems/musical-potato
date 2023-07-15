@@ -12,27 +12,28 @@ const PriceCard = ({tier: {name, description, features, price, options, cta, but
 
   return (
     <>
-        <Card sx={{minHeight: {xs:'65vh', sm:'50vh'}, marginInline: '3vw', width: {xs:'85vw', sm:'480px'}, backgroundColor: `rgba(255, 255, 255, 0.8)`  }}>
+        <Card id={id} elevation={0} sx={{bgcolor:'transparent', width: {md:'65vw'}}}>
+        <Card sx={{minHeight: {xs:'65vh', sm:'50vh'}, marginInline: '3vw', width: {xs:'85vw', sm:'480px', md:'55vw'}, backgroundColor: `rgba(255, 255, 255, 0.8)`  }}>
             <CardContent sx={{}}>
-            <span><SelfImprovementRounded sx={{color: lightGreen[500], fontSize: {xs:'4rem',sm: '4rem'}}}/></span>
-                <Typography sx={{width: '100%', textAlign: 'center', fontWeight: 'bold', fontSize:{xs:'1.75rem',sm:'2rem'}, marginBlockEnd:{xs:'1vh'} }} variant='p' component='div'>
+            <span><SelfImprovementRounded sx={{color: lightGreen[500], fontSize: {xs:'4rem',sm: '4rem', md:'2rem', xl:'3rem'}}}/></span>
+                <Typography sx={{width: '100%', textAlign: 'center', fontWeight: 'bold', fontSize:{xs:'1.75rem',sm:'2rem', md:'1.5rem', xl:'2rem'}, marginBlockEnd:{xs:'1vh'} }} variant='p' component='div'>
                     {name}
                 </Typography>
-                <Typography sx={{width: '100%', textAlign: 'center', fontSize: {xs:'.9rem', sm:'1rem'}, marginBlockEnd:{xs:'2vh'} }} variant='body' component='div'>
+                <Typography sx={{width: '100%', textAlign: 'center', fontSize: {xs:'.9rem', sm:'1rem', md:'.9rem', xl:'1.15rem'}, marginBlockEnd:{xs:'2vh'} }} variant='body' component='div'>
                     {description}
                 </Typography>
                 <ul className='mb-3'  style={{listStyleType:'initial', listStylePosition: 'inside',}}>
                     {features?.map((f, i) => {
                         return (
                             <li key={i*3} className='mb-1'>
-                                <Typography variant='p' sx={{fontSize: {xs:'1rem', sm:'1rem'}}}>
+                                <Typography variant='p' sx={{fontSize: {xs:'1rem', sm:'1rem', xl:'1.1rem'}}}>
                                     {f}
                                 </Typography>
                             </li>
                         )
                     })}
                 </ul>
-                <Typography variant='h5' component='div' sx={{width: '100%', textAlign: 'center', fontWeight: 'bold', color: lightGreen[500], marginBlock: '2vh', fontSize:{xs: '2rem', sm:'3.5rem'}}}>
+                <Typography variant='h5' component='div' sx={{width: '100%', textAlign: 'center', fontWeight: 'bold', color: lightGreen[500], marginBlock: '2vh', fontSize:{xs: '2rem', sm:'3.5rem', md:'2rem', xl:'2.5rem'}}}>
                     {price}
                 </Typography>
                 <Typography sx={{width: '100%', textAlign: 'center',  marginBlockEnd: '3vh', fontSize:{xs:'.9rem',sm:'1rem'}}} variant='body' component='div'>
@@ -45,6 +46,8 @@ const PriceCard = ({tier: {name, description, features, price, options, cta, but
             </Box>
             </CardContent>
         </Card>
+        </Card>
+
     </>
   )
 }

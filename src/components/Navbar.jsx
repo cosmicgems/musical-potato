@@ -82,7 +82,7 @@ function Navbar() {
   return (
     <div style={{ paddingInline: '33%' }}>
       <AppBar elevation={0} position="fixed" sx={{ bgcolor: 'transparent', paddingInline: '6vw', marginBlockStart: '3vh' }}>
-        <Container maxWidth="xl" sx={{ bgcolor: {xs:lightGreen[500] ,md:grey[900]}, borderRadius: '10px', }}>
+        <Container maxWidth="xl" sx={{ bgcolor: {xs:lightGreen[500] ,md: `rgba(139, 195, 74, 0.8)`}, borderRadius: '10px', }}>
           <Toolbar disableGutters sx={{}}>
             <SelfImprovementRounded sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
             <Typography

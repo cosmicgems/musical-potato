@@ -46,10 +46,10 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <Card elevation={0} className='green-gradient-background' sx={{bgcolor: grey[900], minHeight: {xs:'125vh', sm:'100vh'}, borderRadius: 0}}>
+    <Card elevation={0} className='green-gradient-background' sx={{bgcolor: grey[900], minHeight: {xs:'125vh', sm:'100vh', lg:'150vh', xl:'100vh'}, borderRadius: 0}}>
 
             <CardContent
-            sx={{  maxWidth: '100%', minWidth:'100%', display:'flex', overflowX: 'scroll', position: 'absolute', paddingInline: 0, overflowWrap: 'unset', marginBlockStart: {xs:'25vh',sm:'23vh'}}}
+            sx={{  maxWidth: '100%', minWidth:'100%', display:'flex', overflowX: 'scroll', overflowY:'hidden', position: 'absolute', paddingInline: 0, overflowWrap: 'unset', marginBlockStart: {xs:'25vh',sm:'23vh', lg:'45vh', xl:'30vh'}}}
             >
 
                 <Stack direction='row' justifyContent="center" alignItems='center' style={{display:'flex', textAlign:'center', paddingInline: 0}}>
